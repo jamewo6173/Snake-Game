@@ -122,4 +122,33 @@ function draw(){
 }
 
 
+function direction(event){
+    let key = event.keyCode;
+    if( key == 37 && d != "RIGHT"){
+        left.play();
+        d = "LEFT";
+    }else if(key == 38 && d != "DOWN"){
+        d = "UP";
+        up.play();
+    }else if(key == 39 && d != "LEFT"){
+        d = "RIGHT";
+        right.play();
+    }else if(key == 40 && d != "UP"){
+        d = "DOWN";
+        down.play();
+    }
+}
+ 
+// cheack collision function
+function collision(head,array){
+    for(let i = 0; i < array.length; i++){
+        if(head.x == array[i].x && head.y == array[i].y){
+            return true;
+        }
+    }
+    return false;
+}
+
+
+
 let game = setInterval(draw,100);
