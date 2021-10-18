@@ -1,0 +1,23 @@
+
+.game-restart{
+    margin: 55px 45%;
+}
+
+canvas{
+    display: block;
+    margin: 20px auto;
+}
+
+#footer{
+    padding: 7% 15%;
+    text-align: center;
+}
+.contact{
+    margin: auto 10px;
+}
+p{
+    margin-top: 10px;
+    font-family: 'Lemonada', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
